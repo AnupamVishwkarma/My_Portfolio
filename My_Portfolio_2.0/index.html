@@ -1,0 +1,515 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Anupam Vishwkarma â€” Full Stack Developer</title>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&family=Syne:wght@400;600;700;800&family=Inter:wght@300;400;500&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"/>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+
+  <div class="cursor" id="cursor"></div>
+  <div class="cursor-follower" id="cursorFollower"></div>
+
+  <!-- NAV -->
+  <nav>
+    <a href="#" class="nav-logo">&lt;<span>AV</span> /&gt;</a>
+    <ul class="nav-links">
+      <li><a href="#about">About</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#experience">Journey</a></li>
+      <li><a href="#education">Education</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+    <a href="#contact" class="nav-cta">Hire Me</a>
+  </nav>
+
+  <!-- HERO -->
+  <section class="hero" id="home">
+    <div class="hero-grid-bg"></div>
+    <div class="hero-glow"></div>
+    <div class="hero-glow2"></div>
+    <div class="hero-bg-photo" aria-hidden="true">
+      <img src="assets/profile.jpg" alt="" class="hero-bg-photo-img"/>
+    </div>
+    <div class="hero-content">
+      <div class="hero-tag">Available for Work</div>
+      <h1 class="hero-name">Anupam<br/><span class="accent">Vishwkarma.</span></h1>
+      <p class="hero-title">Full Stack <span class="typed-text" id="typed"></span></p>
+      <p class="hero-desc">
+        I build <strong>high-performance web applications</strong> that live at the intersection of beautiful design and clean engineering. Turning complex problems into elegant digital experiences.
+      </p>
+      <div class="hero-btns">
+        <a href="#projects" class="btn-primary">VIEW MY WORK</a>
+        <a href="#contact" class="btn-outline">GET IN TOUCH</a>
+      </div>
+    </div>
+    <div class="hero-stats">
+      <div class="stat">
+        <div class="stat-num">3<span>+</span></div>
+        <div class="stat-label">Years Exp.</div>
+      </div>
+      <div class="stat">
+        <div class="stat-num">20<span>+</span></div>
+        <div class="stat-label">Projects</div>
+      </div>
+      <div class="stat">
+        <div class="stat-num">15<span>+</span></div>
+        <div class="stat-label">Clients</div>
+      </div>
+    </div>
+    <div class="hero-scroll">
+      <div class="scroll-line"></div>
+      Scroll
+    </div>
+  </section>
+
+  <!-- MARQUEE -->
+  <div class="marquee-section">
+    <div class="marquee-track" id="marqueeTrack"></div>
+  </div>
+
+  <!-- ABOUT -->
+  <section class="about" id="about">
+    <div class="section-header reveal">
+      <span class="section-num">01.</span>
+      <h2 class="section-title">About Me</h2>
+      <div class="section-line"></div>
+    </div>
+    <div class="about-grid">
+      <div class="about-text reveal">
+        <p>Hello! I'm <strong>Anupam Vishwkarma</strong>, a passionate Full Stack Developer based in <strong>PR Enclave, Mehrauli, Ghaziabad, Uttar Pradesh</strong>. I specialize in building scalable web applications from concept to deployment.</p>
+        <p>With <strong>3+ years of experience</strong>, I've worked with startups and enterprises alike, delivering solutions that are not just functional, but <span class="highlight">beautifully engineered</span>.</p>
+        <p>My academic journey reflects a strong foundation in computer science, continuous growth, and a steady focus on building practical technical skills.</p>
+        <p>When I'm not pushing pixels or wrangling APIs, you'll find me exploring open-source projects, contributing to developer communities, or experimenting with new frameworks.</p>
+        <div class="about-skills-list">
+          <div class="about-skill-item">HTML & CSS</div>
+          <div class="about-skill-item">JavaScript</div>
+          <div class="about-skill-item">Bootstrap</div>
+          <div class="about-skill-item">Tailwind CSS</div>
+          <div class="about-skill-item">React.js</div>
+          <div class="about-skill-item">Node.js & Express.js</div>
+          <div class="about-skill-item">MongoDB & MySQL</div>
+          <div class="about-skill-item">Java with DSA</div>
+          <div class="about-skill-item">Power BI</div>
+          <div class="about-skill-item">MS Office & Typing</div>
+        </div>
+      </div>
+      <div class="about-image-wrap reveal">
+        <div class="avatar-box">
+          <div class="avatar-inner">
+            <img src="assets/profile.jpg" alt="Anupam Vishwkarma" class="about-photo"/>
+          </div>
+          <div class="avatar-tag">
+            <div class="avatar-tag-num"></div>
+            <div class="avatar-tag-label">Lines of Code</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SKILLS -->
+  <section id="skills">
+    <div class="section-header reveal">
+      <span class="section-num">02.</span>
+      <h2 class="section-title">Tech Stack</h2>
+      <div class="section-line"></div>
+    </div>
+    <div class="skills-grid">
+      <div class="skill-card reveal">
+        <span class="skill-icon"><i class="fa-solid fa-code"></i></span>
+        <div class="skill-name">Frontend</div>
+        <div class="skill-desc">Building responsive and user-friendly interfaces with strong fundamentals in modern frontend development.</div>
+        <div class="skill-tags">
+          <span class="skill-tag">HTML</span>
+          <span class="skill-tag">CSS</span>
+          <span class="skill-tag">JavaScript</span>
+          <span class="skill-tag">Bootstrap</span>
+          <span class="skill-tag">Tailwind CSS</span>
+          <span class="skill-tag">React</span>
+        </div>
+      </div>
+      <div class="skill-card reveal">
+        <span class="skill-icon"><i class="fa-solid fa-server"></i></span>
+        <div class="skill-name">Backend</div>
+        <div class="skill-desc">Developing server-side applications and APIs with JavaScript runtime, backend frameworks, and database integration.</div>
+        <div class="skill-tags">
+          <span class="skill-tag">Node.js</span>
+          <span class="skill-tag">Express.js</span>
+          <span class="skill-tag">REST API</span>
+          <span class="skill-tag">JavaScript</span>
+        </div>
+      </div>
+      <div class="skill-card reveal">
+        <span class="skill-icon"><i class="fa-solid fa-database"></i></span>
+        <div class="skill-name">Database</div>
+        <div class="skill-desc">Working with both relational and NoSQL databases to store, manage, and retrieve application data efficiently.</div>
+        <div class="skill-tags">
+          <span class="skill-tag">MongoDB</span>
+          <span class="skill-tag">MySQL</span>
+        </div>
+      </div>
+      <div class="skill-card reveal">
+        <span class="skill-icon"><i class="fa-solid fa-chart-column"></i></span>
+        <div class="skill-name">Tools & Productivity</div>
+        <div class="skill-desc">Using essential productivity tools and computer applications to support documentation, communication, and daily workflow.</div>
+        <div class="skill-tags">
+          <span class="skill-tag">MS Office</span>
+          <span class="skill-tag">Word</span>
+          <span class="skill-tag">Excel</span>
+          <span class="skill-tag">PowerPoint</span>
+          <span class="skill-tag">Power BI</span>
+        </div>
+      </div>
+      <div class="skill-card reveal">
+        <span class="skill-icon"><i class="fa-solid fa-keyboard"></i></span>
+        <div class="skill-name">Communication Skills</div>
+        <div class="skill-desc">Improving written communication and typing speed for professional work, documentation, and daily technical tasks.</div>
+        <div class="skill-tags">
+          <span class="skill-tag">English Typing</span>
+          <span class="skill-tag">35 WPM</span>
+          <span class="skill-tag">Communication</span>
+        </div>
+      </div>
+      <div class="skill-card reveal">
+        <span class="skill-icon"><i class="fa-solid fa-brain"></i></span>
+        <div class="skill-name">Core Strengths</div>
+        <div class="skill-desc">Strengthening the fundamentals needed for a fresher full stack developer role through practice and project work.</div>
+        <div class="skill-tags">
+          <span class="skill-tag">Frontend</span>
+          <span class="skill-tag">Backend</span>
+          <span class="skill-tag">Database</span>
+          <span class="skill-tag">Java</span>
+          <span class="skill-tag">DSA</span>
+          <span class="skill-tag">Problem Solving</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROJECTS -->
+  <section class="projects" id="projects">
+    <div class="section-header reveal">
+      <span class="section-num">03.</span>
+      <h2 class="section-title">Featured Projects</h2>
+      <div class="section-line"></div>
+    </div>
+    <div class="projects-grid">
+      <div class="project-card reveal">
+        <div class="project-thumb">
+          <div class="project-thumb-bg p3">ðŸ§ </div>
+        </div>
+        <div class="project-body">
+          <div class="project-type">Ongoing AI Project</div>
+          <div class="project-name">AI-Based Dropout Prediction and Counseling System</div>
+          <div class="project-desc">Currently, I am working on an <strong>AI-Based Dropout Prediction and Counseling System</strong> with a team of three members. In this project, <strong>I am developing the frontend</strong>, <strong>Hirdesh is handling the backend</strong>, and <strong>Anand is working on ML and AI integration</strong>.</div>
+          <div class="project-stack">
+            <span>AI</span><span>ML</span><span>Frontend</span><span>Backend</span><span>Team Project</span>
+          </div>
+          <div class="project-links">
+            <a href="#" class="project-link">In Progress <span class="arrow">â†—</span></a>
+            <a href="#" class="project-link">GitHub <span class="arrow">â†—</span></a>
+          </div>
+        </div>
+      </div>
+      <div class="project-card reveal">
+        <div class="project-thumb">
+          <div class="project-thumb-bg p2">ðŸš•</div>
+        </div>
+        <div class="project-body">
+          <div class="project-type">MERN Team Project</div>
+          <div class="project-name">Medicab</div>
+          <div class="project-desc">Medicab is a MERN stack project developed during my B.Tech 3rd year, 5th semester. This project was created by a team of three members where <strong>I worked on frontend development</strong>, <strong>Hirdesh handled backend development</strong>, and <strong>Anand worked on UI design</strong>.</div>
+          <div class="project-stack">
+            <span>MongoDB</span><span>Express.js</span><span>React.js</span><span>Node.js</span>
+          </div>
+          <div class="project-links">
+            <a href="#" class="project-link">Project Demo <span class="arrow">â†—</span></a>
+            <a href="#" class="project-link">GitHub <span class="arrow">â†—</span></a>
+          </div>
+        </div>
+      </div>
+      <div class="project-card reveal">
+        <div class="project-thumb">
+          <div class="project-thumb-bg p1">ðŸ </div>
+        </div>
+        <div class="project-body">
+          <div class="project-type">College Team Project</div>
+          <div class="project-name">PG-Life</div>
+          <div class="project-desc">PG-Life is a web-based project developed during my B.Tech 2nd year, 3rd semester. It was created to help users explore PG accommodation details through a simple and user-friendly interface. This project was built in a team of three members: <strong>Aditya</strong>, <strong>Chandan</strong>, and <strong>me</strong>.</div>
+          <div class="project-stack">
+            <span>PHP</span><span>MySQL</span><span>XAMPP</span><span>HTML</span><span>CSS</span><span>JavaScript</span><span>Bootstrap</span>
+          </div>
+          <div class="project-links">
+            <a href="#" class="project-link">Project Demo <span class="arrow">â†—</span></a>
+            <a href="#" class="project-link">GitHub <span class="arrow">â†—</span></a>
+          </div>
+        </div>
+      </div>
+      <div class="project-card reveal project-extra">
+        <div class="project-thumb">
+          <div class="project-thumb-bg p4">ðŸ“Š</div>
+        </div>
+        <div class="project-body">
+          <div class="project-type">Analytics Dashboard</div>
+          <div class="project-name">DataPulse</div>
+          <div class="project-desc">Real-time business analytics dashboard with custom visualization components, KPI tracking, and automated reports.</div>
+          <div class="project-stack">
+            <span>React</span><span>D3.js</span><span>GraphQL</span><span>AWS</span>
+          </div>
+          <div class="project-links">
+            <a href="#" class="project-link">Live Demo <span class="arrow">â†—</span></a>
+            <a href="#" class="project-link">GitHub <span class="arrow">â†—</span></a>
+          </div>
+        </div>
+      </div>
+      <div class="project-card reveal project-extra">
+        <div class="project-thumb">
+          <div class="project-thumb-bg p5">ðŸ¥</div>
+        </div>
+        <div class="project-body">
+          <div class="project-type">Healthcare App</div>
+          <div class="project-name">MediTrack</div>
+          <div class="project-desc">Patient management system with appointment scheduling, EHR integration, and telemedicine capabilities.</div>
+          <div class="project-stack">
+            <span>Next.js</span><span>NestJS</span><span>PostgreSQL</span><span>Docker</span>
+          </div>
+          <div class="project-links">
+            <a href="#" class="project-link">Case Study <span class="arrow">â†—</span></a>
+            <a href="#" class="project-link">GitHub <span class="arrow">â†—</span></a>
+          </div>
+        </div>
+      </div>
+      <div class="project-card reveal project-extra">
+        <div class="project-thumb">
+          <div class="project-thumb-bg p6">ðŸŽ“</div>
+        </div>
+        <div class="project-body">
+          <div class="project-type">EdTech Platform</div>
+          <div class="project-name">LearnForge</div>
+          <div class="project-desc">Interactive learning management system with video streaming, quizzes, certificates, and progress tracking.</div>
+          <div class="project-stack">
+            <span>React</span><span>Node.js</span><span>AWS S3</span><span>MongoDB</span>
+          </div>
+          <div class="project-links">
+            <a href="#" class="project-link">Live Demo <span class="arrow">â†—</span></a>
+            <a href="#" class="project-link">GitHub <span class="arrow">â†—</span></a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="projects-action reveal">
+      <button class="projects-toggle" id="projectsToggle" type="button">Show More Projects</button>
+    </div>
+  </section>
+
+  <!-- EXPERIENCE -->
+  <section id="experience">
+    <div class="section-header reveal">
+      <span class="section-num">04.</span>
+      <h2 class="section-title">Journey</h2>
+      <div class="section-line"></div>
+    </div>
+    <div class="timeline">
+      <div class="timeline-item reveal">
+        <div class="timeline-dot"></div>
+        <div class="timeline-period">2024 â€” Present</div>
+        <div class="timeline-role">B.Tech Student</div>
+        <div class="timeline-company">Ajay Kumar Garg Engineering College, Ghaziabad</div>
+        <div class="timeline-desc">Currently pursuing B.Tech while actively strengthening my development skills through academic learning, coding practice, and hands-on project building.</div>
+        <div class="timeline-tags">
+          <span class="timeline-tag">B.Tech</span>
+          <span class="timeline-tag">Computer Science</span>
+          <span class="timeline-tag">AKTU</span>
+          <span class="timeline-tag">Learning</span>
+        </div>
+      </div>
+      <div class="timeline-item reveal">
+        <div class="timeline-dot"></div>
+        <div class="timeline-period">2021 â€” 2024</div>
+        <div class="timeline-role">Diploma Student</div>
+        <div class="timeline-company">Government Polytechnic Mau, Uttar Pradesh</div>
+        <div class="timeline-desc">Completed Diploma in Computer Science and Engineering and built a strong base in programming, problem-solving, and core technical concepts.</div>
+        <div class="timeline-tags">
+          <span class="timeline-tag">Diploma</span>
+          <span class="timeline-tag">BTEUP</span>
+          <span class="timeline-tag">CSE</span>
+          <span class="timeline-tag">77%</span>
+        </div>
+      </div>
+      <div class="timeline-item reveal">
+        <div class="timeline-dot"></div>
+        <div class="timeline-period">Projects & Practice</div>
+        <div class="timeline-role">Fresher Developer</div>
+        <div class="timeline-company">Self Learning & Personal Projects</div>
+        <div class="timeline-desc">As a fresher, I am focused on building real-world projects, improving my frontend and backend skills, and preparing myself for internship and entry-level software development opportunities.</div>
+        <div class="timeline-tags">
+          <span class="timeline-tag">React</span>
+          <span class="timeline-tag">Node.js</span>
+          <span class="timeline-tag">HTML/CSS</span>
+          <span class="timeline-tag">JavaScript</span>
+          <span class="timeline-tag">Projects</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- EDUCATION -->
+  <section class="education" id="education">
+    <div class="section-header reveal">
+      <span class="section-num">05.</span>
+      <h2 class="section-title">Education</h2>
+      <div class="section-line"></div>
+    </div>
+    <div class="education-timeline">
+      <div class="education-item reveal">
+        <div class="education-card">
+          <div class="education-period">2024 - Present</div>
+          <div class="education-degree">B.Tech</div>
+          <div class="education-school">Ajay Kumar Garg Engineering College, Ghaziabad, Uttar Pradesh</div>
+          <div class="education-board">AKTU University</div>
+          <div class="education-desc">Currently pursuing B.Tech and studying in 3rd year, 6th semester. Completed 2nd year with <strong>7.7 CGPA</strong>.</div>
+          <div class="education-tags">
+            <span class="education-tag">B.Tech</span>
+            <span class="education-tag">3rd Year</span>
+            <span class="education-tag">6th Semester</span>
+            <span class="education-tag">7.7 CGPA</span>
+          </div>
+        </div>
+      </div>
+      <div class="education-item reveal">
+        <div class="education-card">
+          <div class="education-period">2021 - 2024</div>
+          <div class="education-degree">Diploma in Computer Science and Engineering</div>
+          <div class="education-school">Government Polytechnic Mau, Uttar Pradesh</div>
+          <div class="education-board">BTEUP</div>
+          <div class="education-desc">Completed diploma in Computer Science and Engineering with a strong academic record and practical technical foundation, securing <strong>77%</strong>.</div>
+          <div class="education-tags">
+            <span class="education-tag">Diploma</span>
+            <span class="education-tag">Computer Science</span>
+            <span class="education-tag">77%</span>
+          </div>
+        </div>
+      </div>
+      <div class="education-item reveal">
+        <div class="education-card">
+          <div class="education-period">2020</div>
+          <div class="education-degree">High School</div>
+          <div class="education-school">Adarsh Inter College, Mahuabagh, Ghazipur, Uttar Pradesh</div>
+          <div class="education-board">UP Board</div>
+          <div class="education-desc">Passed High School with <strong>79.16%</strong>, building the academic base that led me into computer science and engineering.</div>
+          <div class="education-tags">
+            <span class="education-tag">High School</span>
+            <span class="education-tag">UP Board</span>
+            <span class="education-tag">79.16%</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section class="contact" id="contact">
+    <div class="section-header reveal">
+      <span class="section-num">06.</span>
+      <h2 class="section-title">Get In Touch</h2>
+      <div class="section-line"></div>
+    </div>
+    <div class="contact-inner">
+      <div class="contact-left reveal">
+        <h3>Let's Build<br/><span>Something Great</span><br/>Together.</h3>
+        <p>Whether you have a project in mind, an opportunity to discuss, or just want to say hi â€” my inbox is always open.</p>
+        <div class="contact-info">
+          <a href="mailto:anupamvishwkarma3@gmailcom" class="contact-item">
+            <span class="contact-item-icon">ðŸ“§</span>
+            <div>
+              <div class="contact-item-label">Email</div>
+              <div class="contact-item-value">anupamvishwkarma3@gmailcom</div>
+            </div>
+          </a>
+          <a href="tel:+917309024564" class="contact-item">
+            <span class="contact-item-icon">ðŸ“±</span>
+            <div>
+              <div class="contact-item-label">Phone</div>
+              <div class="contact-item-value">+91 73090 24564</div>
+            </div>
+          </a>
+          <a href="#" class="contact-item">
+            <span class="contact-item-icon">ðŸ“</span>
+            <div>
+              <div class="contact-item-label">Location</div>
+              <div class="contact-item-value">PR Enclave, Mehrauli, Ghaziabad, Uttar Pradesh</div>
+            </div>
+          </a>
+          <a href="https://linkedin.com" target="_blank" class="contact-item">
+            <span class="contact-item-icon">ðŸ’¼</span>
+            <div>
+              <div class="contact-item-label">LinkedIn</div>
+              <div class="contact-item-value">linkedin.com/in/aryansingh</div>
+            </div>
+          </a>
+        </div>
+      </div>
+      <div class="contact-form reveal">
+        <div class="form-group">
+          <label class="form-label">Your Name</label>
+          <input type="text" class="form-input" placeholder="John Doe" />
+        </div>
+        <div class="form-group">
+          <label class="form-label">Email Address</label>
+          <input type="email" class="form-input" placeholder="john@example.com" />
+        </div>
+        <div class="form-group">
+          <label class="form-label">Subject</label>
+          <input type="text" class="form-input" placeholder="Project Inquiry" />
+        </div>
+        <div class="form-group">
+          <label class="form-label">Message</label>
+          <textarea class="form-textarea" placeholder="Tell me about your project..."></textarea>
+        </div>
+        <button class="form-submit">SEND MESSAGE â†’</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="footer-brand">
+      <div class="footer-text">Designed & Built by <span>Anupam Vishwkarma</span></div>
+      <div class="footer-copy">Fresh Developer Portfolio Â© 2026</div>
+    </div>
+    <div class="footer-socials">
+      <a href="#" class="footer-social" aria-label="Facebook">
+        <i class="fa-brands fa-facebook-f"></i>
+        <span>Facebook</span>
+      </a>
+      <a href="#" class="footer-social" aria-label="Instagram">
+        <i class="fa-brands fa-instagram"></i>
+        <span>Instagram</span>
+      </a>
+      <a href="#" class="footer-social" aria-label="Twitter">
+        <i class="fa-brands fa-x-twitter"></i>
+        <span>Twitter</span>
+      </a>
+      <a href="#" class="footer-social" aria-label="WhatsApp">
+        <i class="fa-brands fa-whatsapp"></i>
+        <span>WhatsApp</span>
+      </a>
+      <a href="#" class="footer-social" aria-label="GitHub">
+        <i class="fa-brands fa-github"></i>
+        <span>GitHub</span>
+      </a>
+      <a href="#" class="footer-social" aria-label="LinkedIn">
+        <i class="fa-brands fa-linkedin-in"></i>
+        <span>LinkedIn</span>
+      </a>
+    </div>
+  </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
