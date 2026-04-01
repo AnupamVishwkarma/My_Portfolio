@@ -44,10 +44,28 @@
     type();
 
     // Marquee
-    const techs = ['React','Next.js','TypeScript','Node.js','GraphQL','PostgreSQL','MongoDB','Redis','AWS','Docker','Kubernetes','Prisma','Tailwind CSS','Figma','Python','FastAPI'];
+    const techs = [
+      { name: 'React', icon: 'fa-brands fa-react' },
+      { name: 'Next.js', icon: 'fa-solid fa-layer-group' },
+      { name: 'TypeScript', icon: 'fa-solid fa-code' },
+      { name: 'Node.js', icon: 'fa-brands fa-node-js' },
+      { name: 'MongoDB', icon: 'fa-solid fa-database' },
+      { name: 'MySQL', icon: 'fa-solid fa-server' },
+      { name: 'Express.js', icon: 'fa-solid fa-network-wired' },
+      { name: 'REST API', icon: 'fa-solid fa-plug' },
+      { name: 'Tailwind CSS', icon: 'fa-solid fa-wind' },
+      { name: 'JavaScript', icon: 'fa-brands fa-js' },
+      { name: 'GitHub', icon: 'fa-brands fa-github' },
+      { name: 'Figma', icon: 'fa-brands fa-figma' }
+    ];
     const track = document.getElementById('marqueeTrack');
     const doubled = [...techs, ...techs, ...techs];
-    track.innerHTML = doubled.map(t => `<span class="marquee-item"><span>âœ¦</span>${t}</span>`).join('');
+    track.innerHTML = doubled
+      .map(
+        ({ name, icon }) =>
+          `<span class="marquee-item"><i class="${icon}" aria-hidden="true"></i><span>${name}</span></span>`
+      )
+      .join('');
 
     // Scroll Reveal
     const observer = new IntersectionObserver(entries => {
@@ -67,5 +85,63 @@
 
         extraProjects.forEach(card => card.classList.toggle('project-hidden', !isHidden));
         projectsToggle.textContent = isHidden ? 'Show Less Projects' : 'Show More Projects';
+      });
+    }
+
+    // Contact Form API Submit
+    const contactForm = document.getElementById('contactForm');
+    const formStatus = document.getElementById('formStatus');
+    if (contactForm) {
+      contactForm.addEventListener('submit', async e => {
+        e.preventDefault();
+
+        const formData = new FormData(contactForm);
+        const submitButton = contactForm.querySelector('.form-submit');
+        const payload = {
+          name: (formData.get('name') || '').toString().trim(),
+          email: (formData.get('email') || '').toString().trim(),
+          subject: (formData.get('subject') || '').toString().trim(),
+          message: (formData.get('message') || '').toString().trim()
+        };
+
+        if (formStatus) {
+          formStatus.textContent = 'Sending your message...';
+          formStatus.className = 'form-note';
+        }
+        if (submitButton) {
+          submitButton.disabled = true;
+          submitButton.textContent = 'SENDING...';
+        }
+
+        try {
+          const response = await fetch('/api/contact', {
+            method: 'POST',
+            headers: {
+              'Content-Type': 'application/json'
+            },
+            body: JSON.stringify(payload)
+          });
+
+          const data = await response.json();
+          if (!response.ok) {
+            throw new Error(data.message || 'Unable to send message right now.');
+          }
+
+          contactForm.reset();
+          if (formStatus) {
+            formStatus.textContent = data.message || 'Message sent successfully.';
+            formStatus.className = 'form-note is-success';
+          }
+        } catch (error) {
+          if (formStatus) {
+            formStatus.textContent = error.message || 'Something went wrong. Please try again later.';
+            formStatus.className = 'form-note is-error';
+          }
+        } finally {
+          if (submitButton) {
+            submitButton.disabled = false;
+            submitButton.textContent = 'SEND MESSAGE →';
+          }
+        }
       });
     }
